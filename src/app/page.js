@@ -1,6 +1,15 @@
+import ImageGallery from './(components)/ImageGallery/ImageGallery';
 import homecss from './page.module.css'
 export default function HomePage() {
   return <main className={homecss.main}>
-    <div><h1>This is the home page</h1></div>
+    <section className={homecss.section1}>
+      <h1>This is the HERO section</h1>
+    </section>
+    <section className={homecss.section2}>
+      <h1>Events</h1>
+    </section>
+    <section className={homecss.section3}>
+      <ImageGallery />
+    </section>
   </main>;
 }

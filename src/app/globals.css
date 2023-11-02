@@ -3,3 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: max-content;
+  overflow-x: hidden;
+}
