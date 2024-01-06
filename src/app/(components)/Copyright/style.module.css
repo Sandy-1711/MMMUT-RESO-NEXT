@@ -1,8 +1,6 @@
-.main {
-    /* height: 100vh; */
-    padding: 10vw 0;
-    width: 100vw;
+.copyWrap{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1vw 0;
 }

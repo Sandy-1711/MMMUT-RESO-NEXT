@@ -1,12 +1,15 @@
+import BranchCards from './(components)/BranchCards/BranchCards';
 import ImageGallery from './(components)/ImageGallery/ImageGallery';
 import homecss from './page.module.css'
 export default function HomePage() {
   return <main className={homecss.main}>
     <section className={homecss.section1}>
-      <h1>This is the HERO section</h1>
+      <p>One stop solution for all your exam preparations</p>
+      <h1>MMMUT.XYZ</h1>
     </section>
     <section className={homecss.section2}>
-      <h1>Events</h1>
+      <BranchCards/>
+      
     </section>
     <section className={homecss.section3}>
       <ImageGallery />

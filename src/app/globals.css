@@ -13,3 +13,7 @@ body {
   height: max-content;
   overflow-x: hidden;
 }
+#wrapper{
+  width: 1200px;
+  margin: auto;
+}
