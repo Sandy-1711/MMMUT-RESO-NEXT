@@ -13,7 +13,27 @@ body {
   height: max-content;
   overflow-x: hidden;
 }
-#wrapper{
+
+#wrapper {
   width: 1200px;
   margin: auto;
+  /* padding: 0 10px; */
+}
+
+@media screen and (width<1200px) {
+  #wrapper {
+    width: 990px;
+  }
+}
+
+@media screen and (width<990px) {
+  #wrapper {
+    width: 768px;
+  }
+}
+
+@media screen and (width<768px) {
+  #wrapper {
+    width: 95%;
+  }
 }
