@@ -72,6 +72,10 @@
         margin: 0;
     }
 
+    .main {
+        padding: 60px 0;
+    }
+
     .main h1 {
         font-size: 22px;
         font-weight: 400;
@@ -92,12 +96,8 @@
     }
 
     .card {
-        /* gap: 0; */
         margin: 0;
         justify-content: center;
         width: 100px;
-        /* min-width: 100px; */
-        /* height: 100px; */
-        /* max-height: 100px; */
     }
 }

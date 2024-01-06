@@ -64,3 +64,13 @@
     background: #4285F4;
     color: white;
 }
+
+@media screen and (width<768px) {
+    .cards {
+        gap: 10px;
+    }
+
+    .card {
+        width: 120px;
+    }
+}

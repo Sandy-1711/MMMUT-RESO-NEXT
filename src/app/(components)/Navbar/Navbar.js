@@ -1,9 +1,22 @@
 'use client'
 import navbar from './Navbar.module.css'
 import Link from 'next/link'
+import { useEffect } from 'react';
 import { FaDownload } from "react-icons/fa";
 
 export default function Navbar() {
+    useEffect(function () {
+        const links = document.querySelectorAll(`.${navbar.links} ul a`)
+        console.log(links);
+        links.forEach(function (link) {
+            link.addEventListener('click', () => {
+                document.querySelector(`.${navbar.menu}`).style.display = "block";
+                document.querySelector(`.${navbar.cross}`).style.display = "none";
+                document.querySelector(`.${navbar.links}`).style.transform = "translate(100%)"
+            })
+        })
+
+    })
     return <header className={navbar.navbar}>
         <div className={navbar.navwrap} id='wrapper'>
 

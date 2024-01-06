@@ -10,6 +10,51 @@ export default function Footer() {
                 <img src='https://mmmut.xyz/img/logo.gif' />
                 <p>Our motive is to support our community juniors and share our valuable knowledge and resources to everyone.✨</p>
             </div>
+            <div className={style.mobilefoot}>
+                <div className={style.links}>
+                    <ul>
+                        <li>
+                            <Link href={'/'}>
+                                <FaHome />
+                                Home
+                            </Link>
+
+                        </li>
+                        <li>
+                            <Link href={'/team'}>
+                                <RiTeamFill />
+                                Team
+                            </Link>
+
+                        </li>
+                        <li>
+                            <Link href={'/team'}>
+                                <IoMdContact />
+                                Contact Us
+                            </Link>
+
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.socials}>
+                    <p>Reach us</p>
+                    <div>
+                        <a href='www.instagram.com/mmmut.xyz/'>
+                            <FaInstagram />
+                        </a>
+                        <a href='www.instagram.com/mmmut.xyz/'>
+                            <FaWhatsapp />
+                        </a>
+                        <a href='www.instagram.com/mmmut.xyz/'>
+                            <FaLinkedin />
+                        </a>
+                        <a href='www.instagram.com/mmmut.xyz/'>
+                            <FaTwitter />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
             <div className={style.links}>
                 <ul>
                     <li>

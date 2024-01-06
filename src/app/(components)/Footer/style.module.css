@@ -69,10 +69,75 @@
 .socials a:hover {
     color: red;
 }
-.about{
+
+.about {
     display: flex;
     flex-direction: column;
 }
-.about h2{
+
+.about h2 {
     font-size: 20px;
 }
+
+.mobilefoot .links {
+    display: none;
+}
+
+.mobilefoot .socials {
+    display: none;
+}
+
+@media screen and (width<990px) {
+    .footerWrap {
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer .links {
+        justify-content: flex-start;
+        margin: 20px 0;
+        display: none;
+    }
+
+    .footer .socials {
+        display: none;
+    }
+
+    .footerWrap div {
+        width: 95%;
+        /* gap: 20px; */
+    }
+
+
+    .mobilefoot {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .mobilefoot .socials {
+        display: block;
+    }
+
+    .mobilefoot .links {
+        justify-content: center;
+        display: flex;
+        margin: 0;
+    }
+
+
+    .logotext {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .logotext img {
+        width: 200px;
+    }
+}
+
+@media screen and (width<768px) {}

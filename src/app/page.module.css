@@ -47,3 +47,16 @@
 .section3 {
   /* background-color: cadetblue; */
 }
+
+@media screen and (width<768px) {
+  .section1 h1 {
+    font-size: 10vw;
+  }
+
+  .section1 p {
+    font-size: 3vw;
+  }
+  .section1{
+    padding-top: 60px;
+  }
+}
