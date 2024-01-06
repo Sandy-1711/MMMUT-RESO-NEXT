@@ -7,8 +7,8 @@ export default function TeamPage() {
 
             <h1>Our Mentors</h1>
             <div className={teamcss.cards}>
-                {data.mentors.map(function (item) {
-                    return <div className={teamcss.card}>
+                {data.mentors.map(function (item,index) {
+                    return <div key={index} className={teamcss.card}>
                         <div className={teamcss.profile}>
                             <img src={item.src} />
                         </div>
@@ -19,8 +19,8 @@ export default function TeamPage() {
             </div>
             <h1>Our Hardworking Developers</h1>
             <div className={teamcss.cards}>
-                {data.dev.map(function (item) {
-                    return <div className={teamcss.card}>
+                {data.dev.map(function (item,index) {
+                    return <div key={index} className={teamcss.card}>
                         <div className={teamcss.profile}>
                             <img src={item.src} />
                         </div>
@@ -38,8 +38,8 @@ export default function TeamPage() {
             </div>
             <h1>Content Providers</h1>
             <div className={teamcss.cards}>
-                {data.content.map(function (item) {
-                    return <div className={teamcss.card}>
+                {data.content.map(function (item,index) {
+                    return <div key={index} className={teamcss.card}>
                         <div className={teamcss.profile}>
                             <img src={item.src} />
                         </div>
